@@ -17,7 +17,7 @@ const detailsBox = document.getElementById("car-details");
 carCards.forEach(function (card) {
    card.addEventListener("click", function () {
       const carName = card.querySelector("h3").textContent;
-      document.getElementById("details-name").textContent = 
+      document.getElementById("details-price").textContent = 
          "Car: " + carName;
       document.getElementById("details-name").textContent =
          "Price: $100,000";
@@ -29,13 +29,13 @@ carCards.forEach(function (card) {
 
 const detailButtons = document.querySelectorAll(".details-btn");
 detailButtons.forEach(function (button) {
-   button.addEventListener("click", fucntion () {
+   button.addEventListener("click", function () {
                            const card = button.closest(".car-card");
                            const carName = card.querySelector("h3").textContent;
 
                            document.getElementById("details-name").textContent =
                               "Car: " + carName;
-                           document.getElementById("details-prize").textContent =
+                           document.getElementById("details-price").textContent =
                               "Price: $100,000";
                            document.getElementById("details-info").textContent =
                               "More specifications coming soon.";
