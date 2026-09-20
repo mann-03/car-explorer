@@ -146,6 +146,17 @@ footer {
      color: #aaa;
 }
 
+.car-details {
+     display: none;
+     margin: 40px auto;
+     padding: 25px;
+     max-width: 600px;
+     text-align: center;
+     background: white;
+     border-radius: 15px;
+}
+
+
 
 
 
