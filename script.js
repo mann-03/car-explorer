@@ -26,8 +26,15 @@ carCards.forEach(function (card) {
          "Car: " + carName;
       document.getElementById("details-name").textContent =
          "Price: $100,000";
-      document.getElemenyById("details-info").textContent =
+      document.getElementById("details-info").textContent =
          "More specifications coming soon.";
       detailsBox.style.display = "block";
    });
 });
+
+
+
+
+
+
+
