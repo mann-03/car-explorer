@@ -27,6 +27,22 @@ carCards.forEach(function (card) {
    });
 });
 
+const detailButtons = document.querySelectorAll(".details-btn");
+detailButtons.forEach(function (button) {
+   button.addEventListener("click", fucntion () {
+                           const card = button.closest(".car-card");
+                           const carName = card.querySelector("h3").textContent;
+
+                           document.getElementById("details-name").textContent =
+                              "Car: " + carName;
+                           document.getElementById("details-prize").textContent =
+                              "Price: $100,000";
+                           document.getElementById("details-info").textContent =
+                              "More specifications coming soon.";
+                           document.getElementById("car-details").style.display = "block";
+   });
+});
+
 
 
 
