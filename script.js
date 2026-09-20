@@ -18,3 +18,16 @@ carCards.forEach(function (card) {
       alert("You selected: " + carName);
    });
 });
+const detailsBox = document.getElementById("car-details");
+carCards.forEach(function (card) {
+   card.addEventListener("click", function () {
+      const carName = card.querySelector("h3").textContent;
+      document.getElementById("details-name").textContent = 
+         "Car: " + carName;
+      document.getElementById("details-name").textContent =
+         "Price: $100,000";
+      document.getElemenyById("details-info").textContent =
+         "More specifications coming soon.";
+      detailsBox.style.display = "block";
+   });
+});
