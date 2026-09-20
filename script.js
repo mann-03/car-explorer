@@ -12,12 +12,7 @@ searchInput.addEventListener("input", function () {
      }
    });
 });
-carCards.forEach(function (card) {
-   card.addEventListener("click", function () {
-      const carName = card.querySelector("h3").textContent;
-      alert("You selected: " + carName);
-   });
-});
+
 const detailsBox = document.getElementById("car-details");
 carCards.forEach(function (card) {
    card.addEventListener("click", function () {
