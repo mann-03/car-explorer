@@ -1,4 +1,3 @@
-Javascript
 const searchInput = document.getElementById("search");
 const carCards = document.querySelectorAll(".car-card");
 
@@ -11,5 +10,11 @@ searchInput.addEventListener("input", function () {
      } else {
          card.style.display = "none";
      }
+   });
+});
+carCards.forEach(function (card) {
+   card.addEventListener("click", function () {
+      const carName = card.querySelector("h3").textContent;
+      alert("You selected: " + carName);
    });
 });
